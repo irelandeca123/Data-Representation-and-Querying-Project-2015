@@ -23,3 +23,10 @@ There are twelve values on each line, which are as follows:
 - **WGS84Longitude**: shows the longitude of the location of the club basically the x coordinates.
 - **WGS4Latitude**: shows the latitude of the location of the club basically the y coordinates.
 - **Eircode**: to locate address in the state.
+
+## List of cars for a given year 
+http://sports.com/location/[NAME]
+
+where [NAME] is the name of the club
+returns location of the club
+
