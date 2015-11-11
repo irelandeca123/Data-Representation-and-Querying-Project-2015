@@ -37,7 +37,7 @@ That would return the clubs named Clan na Gael which will be returned in JSON fo
 
 An example of a response would be:
 ```json
- [ {"OBJECTID": 4, "TYPE": GAA, "Telephone": NA} ]
+ [ {"OBJECTID": 4, "TYPE": "GAA", "Telephone": "NA"} ]
  ```
 
 ## List of locations for given clubs.
@@ -67,10 +67,27 @@ An example would be (url):
 That would return the clubs associated with the sport GAA which will be returned in JSON format with the following properties for each club:
 - **Name**: the name of the club.
 - **Address**: Showing the addresses associated with the club.
-- **Telephone**: That will return whether the club has a phone number or not.
 
 An example of a response would be:
 ```json
- [ {"Name": "Clan na Gael", "Address": "Johnstown, Cornafulla, Athlone, Co Roscommon", "Telephone": "NA"} ]
+ [ {"Name": "Clan na Gael", "Address": "Johnstown, Cornafulla, Athlone, Co Roscommon"} ]
  ```
+
+## Find contact information for a given club.
+You can get list of contact information of the clubs by using the  following GET method:
+<em> *http://sports.com/Telephone/[Name]* </em>.
+Where [Name] is the club name which then will show the contact information.
+An example would be (url):
+<em> *http://sports.com/Telephone/[Boyle GAA Club]* </em>
+That would return the contact information associated with the club entered on the GET method which will be returned in JSON format with the following properties for each club:
+- **Name**: The name of the club.
+- **Address**: Showing the addresses associated with the club.
+- **Telephone**: That will return whether the club has a phone number or not.
+- **Web**: The website associated with the club.
+
+An example of a response would be:
+```json
+ [ {"Name": "Clan na Gael", "Address": "Johnstown, Cornafulla, Athlone, Co Roscommon", "Telephone": "NA", "Web": " www.fuerty.roscommon.gaa.ie"} ]
+ ```
+
 
