@@ -24,9 +24,14 @@ There are twelve values on each line, which are as follows:
 - **WGS4Latitude**: shows the latitude of the location of the club basically the y coordinates.
 - **Eircode**: to locate address in the state.
 
-## List of cars for a given year 
-http://sports.com/location/[NAME]
+## List of names for a given club.
+*http://sports.com/Name/[NAME]*
+where [NAME] is the name of the club whic returns the club names of the club.
+An example would be (url):
+*http://sports.com/Name/[Clan na Gael]*
+That would return the clubs named Clan na Gael which will be returned in JSON format with the following properties for each club:
+- *x*: 
+- *y*:
+- 
 
-where [NAME] is the name of the club
-returns location of the club
 
