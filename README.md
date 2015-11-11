@@ -32,12 +32,12 @@ An example would be (url):
 <em> *http://sports.com/Name/[ClannaGael]* </em>
 That would return the clubs named Clan na Gael which will be returned in JSON format with the following properties for each club:
 - **OBJECTID**: Unique object ID of the club.
-- **TYPE**: Type of sport that the club is.
-- **TELEPHONE**: That will return whether the club has a phone number or not.
+- **Type**: Type of sport that the club is.
+- **Telephone**: That will return whether the club has a phone number or not.
 
 An example of a response would be:
 ```json
- [ {"OBJECTID": 4, "TYPE": GAA, "Telephone": N/A} ]
+ [ {"OBJECTID": 4, "TYPE": GAA, "Telephone": NA} ]
  ```
 
 ## List of locations for given clubs.
@@ -66,6 +66,10 @@ An example would be (url):
 That would return the clubs associated with the sport GAA which will be returned in JSON format with the following properties for each club:
 - **Name**: the name of the club.
 - **Address**: Showing the addresses associated with the club.
-- **TELEPHONE**: That will return whether the club has a phone number or not.
-- 
+- **Telephone**: That will return whether the club has a phone number or not.
+
+An example of a response would be:
+```json
+ [ {"Name": "Clan na Gael", "Address": "Johnstown, Cornafulla, Athlone, Co Roscommon", "Telephone": "NA"} ]
+ ```
 
