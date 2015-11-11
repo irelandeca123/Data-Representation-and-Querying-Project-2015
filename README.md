@@ -59,5 +59,13 @@ An example of a response would be:
  
  ## Find a given club by the type of sport.
  You can get list of names of the clubs found in that sport by using the following GET method:
-<em> *http://sports.com/Type/[Type]* </em>
+<em> *http://sports.com/Type/[Type]* </em>.
+Where [Type] is the sport type your looking for.
+An example would be (url):
+<em> *http://sports.com/Type/[GAA]* </em>
+That would return the clubs associated with the sport GAA which will be returned in JSON format with the following properties for each club:
+- **Name**: the name of the club.
+- **Address**: Showing the addresses associated with the club.
+- **TELEPHONE**: That will return whether the club has a phone number or not.
+- 
 
