@@ -54,7 +54,8 @@ That would return the club located at Tulsk, Co Roscommon which will be returned
 
 An example of a response would be:
 ```json
- [ {"X": -8.02051310392344, "Y": 53.3687496538591, "Name": Clan na Gael, "TYPE": GAA} ]
+ [ {"X": -8.02051310392344, "Y": 53.3687496538591, "Name": "Clan na Gael", "TYPE": "GAA"
+ } ]
  ```
  
  ## Find a given club by the type of sport.
