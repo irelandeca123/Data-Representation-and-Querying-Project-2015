@@ -78,7 +78,7 @@ You can get list of contact information of the clubs by using the  following GET
 <em> *http://sports.com/Telephone/[Name]* </em>.
 Where [Name] is the club name which then will show the contact information.
 An example would be (url):
-<em> *http://sports.com/Telephone/[Boyle GAA Club]* </em>
+<em> *http://sports.com/Telephone/[Boyle-GAA-Club]* </em>
 That would return the contact information associated with the club entered on the GET method which will be returned in JSON format with the following properties for each club:
 - **Name**: The name of the club.
 - **Address**: Showing the addresses associated with the club.
