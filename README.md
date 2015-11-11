@@ -89,5 +89,19 @@ An example of a response would be:
 ```json
  [ {"Name": "Clan na Gael", "Address": "Johnstown, Cornafulla, Athlone, Co Roscommon", "Telephone": "NA", "Web": " www.fuerty.roscommon.gaa.ie"} ]
  ```
+## List of clubs using eircode
+You can get list of names of the clubs that have eircode by using the following GET method:
+<em> *http://sports.com/Eircode/[EIRCODE]* </em>
+where [EIRCODE] is the eirocde of the club/address which returns the club names that have that eircode as specified.
+An example would be (url):
+<em> *http://sports.com/Eircode/[F45KP93]* </em>
+That would return the club named Castlerea Open Air Swimming Pool which will be returned in JSON format with the following properties for each club:
+- **OBJECTID**: Unique object ID of the club.
+- **Name**: The name of the club.
+- **Address**: Showing the addresses associated with the club.
 
+An example of a response would be:
+```json
+ [ {"OBJECTID": 81, "Name": "Castlerea Open Air Swimming Pool", "Address": "The Demesne, Castlerea, Co Roscommon" } ]
+ ```
 
