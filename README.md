@@ -25,13 +25,35 @@ There are twelve values on each line, which are as follows:
 - **Eircode**: to locate address in the state.
 
 ## List of names for a given club.
-*http://sports.com/Name/[NAME]*
-where [NAME] is the name of the club whic returns the club names of the club.
+You can get list of names of the clubs by using the following GET method:
+<em> *http://sports.com/Name/[NAME]* </em>
+where [NAME] is the name of the club which returns the club names of the club.
 An example would be (url):
-*http://sports.com/Name/[Clan na Gael]*
+<em> *http://sports.com/Name/[ClannaGael]* </em>
 That would return the clubs named Clan na Gael which will be returned in JSON format with the following properties for each club:
-- *x*: 
-- *y*:
-- 
+- **OBJECTID**: Unique object ID of the club.
+- **TYPE**: Type of sport that the club is.
+- **TELEPHONE**: That will return whether the club has a phone number or not.
 
+An example of a response would be:
+```json
+ [ {"OBJECTID": 4, "TYPE": GAA, "Telephone": N/A} ]
+ ```
+
+## List of locations for given clubs.
+You can get list of names of the clubs found in the address by using the following GET method:
+<em> *http://sports.com/Address/[address]* </em>
+where [address] is the club address your looking for.
+An example would be (url):
+<em> *http://sports.com/Address/[Tulsk,Co-Roscommon]* </em>
+That would return the club located at Tulsk, Co Roscommon which will be returned in JSON format with the following properties for each club:
+- **X**: x coordinates of the club. 
+- **Y**: y coordinates of the club.
+- **Name**: the name of the club.
+- **TYPE**:Type of sport that the club is.
+
+An example of a response would be:
+```json
+ [ {"X": -8.02051310392344, "Y": 53.3687496538591, "Name": Clan na Gael, "TYPE": GAA} ]
+ ```
 
