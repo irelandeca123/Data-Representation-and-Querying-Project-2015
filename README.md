@@ -123,7 +123,7 @@ Connection: Keep-Alive
 
 {"OBJECTID": "2", "Name": "Ballinameen GAA", "Web": "www.Ballinameen.ie"}
 ```
-This request will basically update the website ("Web") for the given ID "2" and will return JSON.
+This request will basically update the website ("Web") for the given ID "2" and will return in JSON format.
 
 ### Delete Method:
 The DELETE method requests that the origin server delete the resource identified by the Request-URI.
@@ -132,11 +132,11 @@ The DELETE method requests that the origin server delete the resource identified
 DELETE / request HTTP/1.1
 Host: www.sports.com
 Content-Type: application/jsonrequest
-Content-Length: 88
+Content-Length:88
 Connection: Keep-Alive
 
-{"OBJECTID": "2", "Name": "Ballinameen GAA", "Web": "www.Ballinameen.ie"}
+{"OBJECTID": "3", "Name": "Boyle GAA Club"}
 ```
-This request will basically delete the website ("Web") for the given ID "2" and will return JSON.
+This request will basically delete the whole record with Object id 3 and will return in JSON format.
 
 
