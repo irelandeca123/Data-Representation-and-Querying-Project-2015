@@ -125,7 +125,7 @@ Connection: Keep-Alive
 ```
 This request will basically update the website ("Web") for the given ID "2" and will return in JSON format.
 
+##Summary
 
-
-
-
+This is my simple API Design for Apps4gaps.The data is made available through a set of URLs,
+using a variety of HTTP methods.Thank you for reading !
