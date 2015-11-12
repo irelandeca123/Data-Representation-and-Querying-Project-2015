@@ -127,5 +127,5 @@ This request will basically update the website ("Web") for the given ID "2" and 
 
 ##Summary
 
-This is my simple API Design for Apps4gaps.The data is made available through a set of URLs,
-using a variety of HTTP methods.Thank you for reading !
+This is my simple API Design for Apps4gaps using the dataset called "Roscommon Sports Facilities" .The data is made available through a set of URLs, using a variety of HTTP methods.
+Thank you for reading !
