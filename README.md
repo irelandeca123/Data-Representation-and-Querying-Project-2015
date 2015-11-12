@@ -125,18 +125,7 @@ Connection: Keep-Alive
 ```
 This request will basically update the website ("Web") for the given ID "2" and will return in JSON format.
 
-### Delete Method:
-The DELETE method requests that the origin server delete the resource identified by the Request-URI.
 
-```http
-DELETE / request HTTP/1.1
-Host: www.sports.com
-Content-Type: application/jsonrequest
-Content-Length:88
-Connection: Keep-Alive
 
-{"OBJECTID": "3", "Name": "Boyle GAA Club"}
-```
-This request will basically delete the whole record with Object id 3 and will return in JSON format.
 
 
