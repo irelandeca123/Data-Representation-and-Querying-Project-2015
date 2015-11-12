@@ -63,7 +63,7 @@ An example of a response would be:
  } ]
  ```
  
- #### Find a given club by the type of sport
+#### Find a given club by the type of sport
  You can get list of names of the clubs found in that sport by using the following GET method:
 <em> *http://sports.com/Type/[Type]* </em>.
 Where [Type] is the sport type your looking for.
