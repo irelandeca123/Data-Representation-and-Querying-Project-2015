@@ -1,6 +1,5 @@
-# Project title
-## Data Representation and Querying Project 2015
-### Stoyan Rizov
+# Data Representation and Querying Project 2015
+## Stoyan Rizov
 
 ## Introduction
 This project provides the design and documentation for the dataset "Roscommon Sports Facilities" which is available at [data.gov.ie](https://data.gov.ie/dataset/roscommon-sports-facilitiesbbc82).
@@ -24,7 +23,9 @@ There are twelve values on each line, which are as follows:
 - **WGS4Latitude**: shows the latitude of the location of the club basically the y coordinates.
 - **Eircode**: to locate address in the state.
 
-## List of names for a given club
+## Get Methods: 
+
+###List of names for a given club
 You can get list of names of the clubs by using the following GET method:
 <em> *http://sports.com/Name/[NAME]* </em>
 where [NAME] is the name of the club which returns the club names of the club.
@@ -40,7 +41,7 @@ An example of a response would be:
  [ {"OBJECTID": 4, "TYPE": "GAA", "Telephone": "NA"} ]
  ```
 
-## List of locations for given clubs
+### List of locations for given clubs
 You can get list of names of the clubs found in the address by using the following GET method:
 <em> *http://sports.com/Address/[address]* </em>
 where [address] is the club address your looking for.
@@ -58,7 +59,7 @@ An example of a response would be:
  } ]
  ```
  
- ## Find a given club by the type of sport
+ ### Find a given club by the type of sport
  You can get list of names of the clubs found in that sport by using the following GET method:
 <em> *http://sports.com/Type/[Type]* </em>.
 Where [Type] is the sport type your looking for.
@@ -73,7 +74,7 @@ An example of a response would be:
  [ {"Name": "Clan na Gael", "Address": "Johnstown, Cornafulla, Athlone, Co Roscommon"} ]
  ```
 
-## Find contact information for a given club
+### Find contact information for a given club
 You can get list of contact information of the clubs by using the  following GET method:
 <em> *http://sports.com/Telephone/[Name]* </em>.
 Where [Name] is the club name which then will show the contact information.
@@ -89,7 +90,7 @@ An example of a response would be:
 ```json
  [ {"Name": "Clan na Gael", "Address": "Johnstown, Cornafulla, Athlone, Co Roscommon", "Telephone": "NA", "Web": " www.fuerty.roscommon.gaa.ie"} ]
  ```
-## List of clubs using eircode
+### List of clubs using eircode
 You can get list of names of the clubs that have eircode by using the following GET method:
 <em> *http://sports.com/Eircode/[EIRCODE]* </em>
 where [EIRCODE] is the eirocde of the club/address which returns the club names that have that eircode as specified.
@@ -104,4 +105,6 @@ An example of a response would be:
 ```json
  [ {"OBJECTID": 81, "Name": "Castlerea Open Air Swimming Pool", "Address": "The Demesne, Castlerea, Co Roscommon" } ]
  ```
+## Post Method:
+
 
